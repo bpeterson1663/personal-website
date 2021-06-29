@@ -11,6 +11,12 @@ a {
 * {
   box-sizing: border-box;
 }
+.page {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+}
 .fade-enter {
   opacity: 0;
 }

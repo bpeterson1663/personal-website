@@ -10,25 +10,18 @@ const AnimationApp = () => {
 
   return (
     <>
-    <Header />
-
-    <TransitionGroup>
-      {/*
-            This is no different than other usage of
-            <CSSTransition>, just make sure to pass
-            `location` to `Switch` so it can match
-            the old location as it animates out.
-          */}
-      <CSSTransition appear key={location.key} classNames="fade" timeout={500}>
-        <Switch location={location}>
-          <Route path="/experience" exact component={Experience} />
-          <Route path="/projects" exact component={Projects} />
-          <Route path="/about" exact component={About} />
-          <Route path="/contact" exact component={Contact} />
-          <Route path="/" component={Home} />
-        </Switch>
-      </CSSTransition>
-    </TransitionGroup>
+      <Header />
+      <TransitionGroup component={null}>
+        <CSSTransition appear key={location.key} classNames="fade" timeout={500}>
+          <Switch location={location}>
+            <Route path="/experience" exact component={Experience} />
+            <Route path="/projects" exact component={Projects} />
+            <Route path="/about" exact component={About} />
+            <Route path="/contact" exact component={Contact} />
+            <Route path="/" component={Home} />
+          </Switch>
+        </CSSTransition>
+      </TransitionGroup>
     </>
   )
 }
@@ -39,8 +32,7 @@ function App() {
       <div className="App">
         <Switch>
           <Route path="*">
-          <AnimationApp />
-
+            <AnimationApp />
           </Route>
         </Switch>
       </div>
