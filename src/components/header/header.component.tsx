@@ -11,7 +11,6 @@ const Header = () => (
       <OptionLink to="/about">ABOUT</OptionLink>
       <OptionLink to="/projects">PROJECTS</OptionLink>
       <OptionLink to="/experience">EXPERIENCE</OptionLink>
-
     </OptionsContainer>
   </HeaderContainer>
 )
