@@ -13,9 +13,13 @@ a {
 }
 .page {
   position: absolute;
+  display: flex;
   top: 100px;
   left: 0;
   right: 0;
+  margin: 16px;
+  max-width: 600px;
+  justify-content: center;
 }
 .fade-enter {
   opacity: 0;

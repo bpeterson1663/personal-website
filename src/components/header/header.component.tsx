@@ -7,10 +7,10 @@ const Header = () => (
       <Logo className="logo" />
     </LogoContainer> */}
     <OptionsContainer>
-      <OptionLink to="/contact">CONTACT</OptionLink>
-      <OptionLink to="/about">ABOUT</OptionLink>
-      <OptionLink to="/projects">PROJECTS</OptionLink>
       <OptionLink to="/experience">EXPERIENCE</OptionLink>
+      <OptionLink to="/projects">PROJECTS</OptionLink>
+      <OptionLink to="/about">ABOUT</OptionLink>
+      <OptionLink to="/contact">CONTACT</OptionLink>
     </OptionsContainer>
   </HeaderContainer>
 )
