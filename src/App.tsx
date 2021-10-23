@@ -3,7 +3,7 @@ import { Route, Switch, BrowserRouter, useLocation } from 'react-router-dom'
 import { Experience, Projects, About, Contact, Home } from './pages'
 import Header from './components/header/header.component'
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
-import './App.css'
+import { GlobalStyle } from './global.styles'
 
 const AnimationApp = () => {
   const location = useLocation()
@@ -30,6 +30,8 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
+        <GlobalStyle />
+
         <Switch>
           <Route path="*">
             <AnimationApp />
